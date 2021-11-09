@@ -1,0 +1,1 @@
+docker build https://github.com/greynathan/Fire_Exercise.git#main -t fire_exercise
