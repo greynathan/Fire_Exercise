@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="ui header" name="Coordinates" value="Coordinates" style="color:#374785">
+      <i class="file alternate icon"></i>
+      <div class="content">
+        Coordinates
+      </div>
+    </h1>
+
+    <table class="ui basic table" style="width:100%">
+        <thead>
+          <tr>
+            <th style="color:white">Coordinate Number</th>
+          <th style="color:white">Latitude</th>
+          <th style="color:white">Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+      {%for i in range(flen):%}
+          <tr>
+            <td>{{i}}</td>
+            <td>{{lat[i]}}</td>
+            <td>{{long[i]}}</td>
+          </tr>
+          {%endfor%}
+        </tbody>
+    </table>
+    {% endblock %}

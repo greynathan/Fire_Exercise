@@ -1,0 +1,15 @@
+
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  thead {
+    background-color: #374785
+  }
+
+  th,td{
+    text-align: center;
+  }
